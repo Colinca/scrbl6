@@ -1,8 +1,8 @@
 package pkgGame;
 
+import eNum.eBonusType;
 import java.util.ArrayList;
 
-import eNum.eBonusType;
 
 public class Board {
 
@@ -17,7 +17,10 @@ public class Board {
 	 * @version Lab #6
 	 * @since Lab #6
 	 */
-	public Board() {
+	public Board() 
+	{
+		puzzle = new Space[14][14];
+		
 		// TODO: Call SetBonus() to set the original bonus setup
 		// TODO: Create the default puzzle
 		// TODO: Loop through each place in the puzzle, insert a 'space' object, value
@@ -57,7 +60,14 @@ public class Board {
 	 * @version Lab #6
 	 * @since Lab #6
 	 */
-	private void SetBonus() {
+	private void SetBonus() 
+	{
+		bonuses.add(new BonusSquare(0,0, TripleWord);
+		bonuses.add(new BonusSquare(0,3, DoubleLetter));
+		bonuses.add(new BonusSquare(0, 7, TripleWord));
+		bonuses.add(new BonusSquare(0, 11, DoubleLetter));
+		bonuses.add(new BonusSquare(0, 14, TripleWord));
+		
 		// TODO: Set the bonus squares. Use the default / class Scrabble settings.
 	}
 
